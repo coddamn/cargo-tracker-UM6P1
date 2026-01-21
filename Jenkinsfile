@@ -13,11 +13,12 @@ pipeline {
             }
         }
 
-        stage('Build & Test with Coverage') {
+        stage('Build & Test') {
             steps {
-                bat 'mvn clean verify'
-            }
-        }
+                bat 'mvnw.cmd clean verify'
+    }
+}
+
 
     }
 //
